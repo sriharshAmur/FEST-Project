@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>FEST Homepage</title>
+    <link rel="stylesheet" href="./css/test.css">
+    <script src="https://kit.fontawesome.com/719072c8bd.js" crossorigin="anonymous"></script>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><img src="images/logo.png" alt=""> FEST</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Portfolio</a></li>
+                <li class="item has-submenu">
+                    <a tabindex="0">Explore</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">Features</a></li>
+                        <li class="subitem"><a href="#">Jobs</a></li>
+                        <li class="subitem"><a href="#">Salaries</a></li>
+                        <li class="subitem"><a href="#">Tools</a></li>
+                    </ul>
+                </li>
+                <li class="item login-button"><a href="#">Log In</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+
+
+
+
+
+
+        const toggle = document.querySelector(".toggle");
+        const menu = document.querySelector(".menu");
+
+        /* Toggle mobile menu */
+        function toggleMenu() {
+            console.log("enter");
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+
+                // adds the menu (hamburger) icon
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+            } else {
+                console.log("enterthis");
+                menu.classList.add("active");
+
+                // adds the close (x) icon
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+            }
+        }
+
+        /* Event Listener */
+        toggle.addEventListener("click", toggleMenu, false);
+
+        const items = document.querySelectorAll(".item");
+
+        /* Activate Submenu */
+        function toggleItem() {
+            if (this.classList.contains("submenu-active")) {
+                this.classList.remove("submenu-active");
+            } else if (menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+                this.classList.add("submenu-active");
+                this.style.color="$dark";
+            } else {
+                this.classList.add("submenu-active");
+                this.style.color="$dark";
+            }
+        }
+
+        /* Event Listeners */
+        for (let item of items) {
+            if (item.querySelector(".submenu")) {
+                item.addEventListener("click", toggleItem, false);
+                item.addEventListener("keypress", toggleItem, false);
+            }
+        }
+
+        /* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  let isClickInside = menu.contains(e.target);
+ 
+  if (!isClickInside && menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+  }
+}
+ 
+/* Event listener */
+document.addEventListener("click", closeSubmenu, false);
+
+    </script>
+
+
+
+</body>
+
+</html>
