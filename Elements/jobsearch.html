@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <script src="https://kit.fontawesome.com/719072c8bd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jobsearch.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="homepage.html"><img src="images/logo.png" alt=""> FEST</a></li>
+                    <li class="item"><a href="jobsearch.html">Job Search</a></li>
+                    <li class="item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="item has-submenu">
+                        <a tabindex="0">Explore</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">Features</a></li>
+                            <li class="subitem"><a href="#">Jobs</a></li>
+                            <li class="subitem"><a href="#">Salaries</a></li>
+                            <li class="subitem"><a href="#">Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="item button"><a href="login.html">Log In</a></li>
+                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <div class="search-outter">
+            <h1>Search For You Next Job</h1>
+            <h2>Use the Search to Look for Jobs</h2>
+            <form class="search" id="search-form" >
+                <div class="search-job">
+                    <input type="text" id="search-word" placeholder="Front-End Web Developer">
+                </div>
+                <div class="search-category">
+                    <h2>Select Category</h2>
+                    <select name="category" id="select-category" class="dropbtn" >Select Category</button>
+                        <option value="Web Designer">Web Designer</option>
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="Graphiic Designer">Graphiic Designer</option>
+                        <option value="App Developer">App Developer</option>
+                        <option value="UI/UX Developer">UI/UX Developer</option>
+                    </select>
+
+                </div>
+                <div class="search-location">
+                    <h2>Select Location</h2>
+                    <select name="location" id="select-location"  class="dropbtn" >
+                        <option value="Enschede">Enschede</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Rotterdam">Rotterdam</option>
+
+                    </select>
+                    </div>
+                    <button class="searchbtn">Search</button>
+                </form>
+                   
+            </div>
+        </div>
+    </section>
+
+    <section class="results" id="results">
+        <div class="results-outter">
+            <h1>Jobs</h1>
+            <div class="result-list">
+                <div class="result" data-category="Web Designer" data-company="Google" data-location="Enschede"
+                    data-type="Full Time" data-salary="4000">
+                    <img src="#" alt="">
+                    <h1 class="title">Web Designer</h1>
+                    <h2 class="result-body description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.
+                    </h2>
+                    <h3 class="result-body company">Google</h3>
+                    <h3 class="result-body location">Enschede</h3>
+                    <h3 class="result-body category">Web Developer</h3>
+                    <h3 class="result-body type">Full Time Job</h3>
+                    <h2 class="result-body salary">$40,000</h2>
+                    <a href="#">Apply</a>
+                </div>
+
+                <div class="result" data-category="Web Developer" data-company="Google" data-location="Enschede"
+                    data-type="Full Time" data-salary="4000">
+                    <img src="#" alt="">
+                    <h1 class="title" id="title">Web Developer</h1>
+                    <h2 class="result-body description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.
+                    </h2>
+                    <h3 class="result-body company">Google</h3>
+                    <h3 class="result-body location">Enschede</h3>
+                    <h3 class="result-body category">Web Developer</h3>
+                    <h3 class="result-body type">Full Time Job</h3>
+                    <h2 class="result-body salary">$40,000</h2>
+                    <a href="#">Apply</a>
+                </div>
+
+                <div class="result" data-category="Web Developer" data-company="Google" data-location="Enschede"
+                    data-type="Full Time" data-salary="4000">
+                    <img src="#" alt="">
+                    <h1 class="title">Web Developer</h1>
+                    <h2 class="result-body description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.
+                    </h2>
+                    <h3 class="result-body company">Google</h3>
+                    <h3 class="result-body location">Enschede</h3>
+                    <h3 class="result-body category">Web Developer</h3>
+                    <h3 class="result-body type">Full Time Job</h3>
+                    <h2 class="result-body salary">$40,000</h2>
+                    <a href="#">Apply</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-links container">
+            <a href="homepage.html">FEST</a>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Tems of Use</a></li>
+                <li><a href="#">Privacy Center</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="images/youtube.png" alt=""></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; Copyright 2020 FEST
+        </div>
+    </footer>
+
+    <div class="loader-wrapper">
+        <!-- <div class="logo"><img src="images/logo.png" alt="">
+            <h1>FEST</h1>
+        </div> -->
+        <span><img src="images/logo.png" alt=""> <h1>FEST</h1></span>
+        <h1 class="loading">Loading...</h1>
+        <div class="loader">
+            <span class="loader-inner"></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nobis est fuga magnam commodi libero
+            provident</p>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/jobsearch.js"></script>
+</body>
+
+</html>

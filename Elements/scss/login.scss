@@ -1,0 +1,274 @@
+//This Page contains Styles for the Login Page
+@import "config";
+@import "breakpoints";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // height: 100vh;
+    // width: 100vw;
+    background-color: $dark-blue;
+    color: $neutral;
+}
+
+.sign-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 90%;
+
+    .logo {
+        margin-top: 10%;
+        font-family: $font-heading;
+        padding: 0px;
+        // border: 1px red solid;
+        img {
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 2rem;;
+            font-family: $font-heading;
+        }
+    }
+
+    .login {
+        // height: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        & > h1 {
+            font-family: $font-heading;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+
+        & > h2 {
+            font-family: $font-heading;
+            margin-bottom: 15px;
+        }
+
+        & > .g-signin2 {
+            margin-bottom: 10px;
+        }
+
+        & form > input {
+            padding: 10px;
+            background-color: $cyan;
+            border: none;
+            margin: 10px auto;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            border: 4px $cyan solid;
+            color: $neutral;
+            font-family: $font-body;
+            font-size: 1.2rem;
+
+            &:hover {
+                cursor: pointer;
+                border: 4px $blue solid;
+            }
+        }
+
+        .login-form {
+            padding: 20px;
+            border: 2px $cyan solid;
+            margin: 20px auto;
+
+            .form-input {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px;
+
+                h2 {
+                    font-family: $font-body;
+                    font-size: 1.2rem;
+                    margin-right: 20px;
+                }
+
+                input {
+                    padding: 15px;
+                    border: 2px $cyan solid;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.signup {
+    margin-top: 10px;
+
+    h1 {
+        font-family: $font-heading;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    .signup-btn {
+        padding: 10px;
+        background-color: $cyan;
+        border: none;
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+        border-radius: 5px;
+        border: 4px $cyan solid;
+        color: $neutral;
+        font-family: $font-body;
+        font-size: 1.2rem;
+
+        &:hover {
+            cursor: pointer;
+            border: 4px $blue solid;
+        }
+    }
+}
+
+.contain {
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+}
+
+.content{
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: $dark-blue;
+    color: $neutral;
+    width: 100vw;
+    // height: 100vh;
+
+    .signup-forms {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        .logo {
+            font-family: $font-heading;
+            padding: 0px;
+            img {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 50%;
+            }
+
+            h1 {
+                font-size: 2rem;;
+                font-family: $font-heading;
+            }
+        }
+
+        & > h1 {
+            margin-top: 20px;
+            font-family: $font-heading;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+
+        .google-signup {
+            // border: 1px red solid;
+            text-align: center;
+
+            h2 {
+                font-family: $font-body;
+                font-size: 1.2rem;
+                margin-right: 20px;
+            }
+
+            & > div {
+                margin: 20px auto;
+                // border: 1px blue solid;
+                width: 150px;
+            }
+        }
+
+        .close {
+            padding: 5px;
+            background-color: $cyan;
+            border: none;
+            margin: auto;
+            text-align: center;
+            width: 40%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 4px $blue solid;
+            color: $neutral;
+            font-family: $font-body;
+            font-size: 1rem;
+
+            &:hover {
+                cursor: pointer;
+                border: 4px $cyan solid;
+            }
+        }
+
+        & form > input {
+            padding: 10px;
+            background-color: $cyan;
+            border: none;
+            margin: 10px auto;
+            text-align: center;
+            width: 80%;
+            border-radius: 5px;
+            border: 4px $cyan solid;
+            color: $neutral;
+            font-family: $font-body;
+            font-size: 1.2rem;
+
+            &:hover {
+                cursor: pointer;
+                border: 4px $blue solid;
+            }
+        }
+
+        .signup-form {
+            padding: 20px;
+            border: 2px $cyan solid;
+            margin: 20px auto;
+
+            .form-input {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px;
+
+                h2 {
+                    font-family: $font-body;
+                    font-size: 1.2rem;
+                    margin-right: 20px;
+                }
+
+                input {
+                    padding: 15px;
+                    border: 2px $cyan solid;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

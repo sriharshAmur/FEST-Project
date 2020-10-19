@@ -1,0 +1,337 @@
+//This Page contains Styles for the Job Search Page
+@import 'config';
+@import 'breakpoints';
+
+
+.search-section {
+    background-color: $dark-blue-dark;
+    color: $neutral;
+    padding: 20px;
+    // display: none;
+
+    .search-outter {
+        // margin: 20px;
+        // width: $container;
+        margin: 0 auto;
+
+        h1 {
+            font-family: $font-heading;
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-family: $font-body;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search {
+            // border: 1px red solid;
+            padding: 10px;
+            text-align: center;
+            // display: none;
+
+            .dropbtn {
+                width: 100%;
+                background-color: $dark-blue-lite;
+                color: white;
+                font-size: 1rem;
+                padding: 20px;
+                border: none;
+                cursor: pointer;
+
+                .dropbtn:hover,
+                .dropbtn:focus {
+                    background-color: #3e8e41;
+                }
+            }
+
+            .search-job {
+                padding: 10px;
+                display: block;
+                margin: 10px auto;
+
+                input {
+                    width: 100%;
+                    padding: 20px;
+                    font-size: 1rem;
+                    // box-shadow: 0px 0px 5px 1px $cyan;
+                    border: 2px $cyan solid;
+
+                    &:focus {
+                        outline: 3px solid #ddd;
+                    }
+                }
+            }
+
+            .search-category {
+                padding: 10px;
+                display: block;
+                margin: 10px auto;
+
+                width: 100%;
+                // display: none;
+                // position: absolute;
+
+                h2 {
+                    padding: 0;
+                    margin: 10px;
+                }
+            }
+
+            .search-location {
+                padding: 10px;
+                display: block;
+                margin: 10px auto;
+                // border: 1px red solid;
+                width: 100%;
+                color: $neutral;
+
+                h2 {
+                    padding: 0;
+                    margin: 10px;
+                }
+            }
+
+            // .searchbtn{
+            //     display: block;
+            //     border: 1px red solid;
+            //     line-height:0;
+
+            //     a{
+            //         line-height:0;
+            //         display: block;
+            //         background-color: $cyan;
+            //     }
+            // }
+
+            .searchbtn {
+                width: 80%;
+                line-height:0;
+                border-radius: 30px;
+                background-color: $cyan;
+                padding: 30px 50px;
+                margin: 20px auto;
+                text-align: center;
+                color: $dark;
+                font-size: 1rem;
+                cursor: pointer;
+                border: 3px $neutral solid;
+
+                a {
+                    line-height:0;
+                    color: $dark-blue-dark;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover {
+                    background-color: $dark-blue-dark;
+                    color: $neutral;
+                    border: 3px $cyan solid;
+
+                    a {
+                        color: $neutral;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .search {
+                // border: 1px red solid;
+                width: $container;
+                margin: 0 auto;
+                display: flex;
+
+                .search-job {
+                    width: 100%;
+
+                    input {
+                        margin-top: 40px;
+
+                        padding: 20px;
+                        font-size: 1rem;
+                        border: 2px $cyan solid;
+
+                        &:focus {
+                            outline: 3px solid #ddd;
+                        }
+                    }
+                }
+
+                .searchbtn {
+                    width: 20%;
+                    margin: 60px 0;
+                }
+            }
+        }
+    }
+}
+
+.results {
+    background-color: $dark-blue;
+    color: $neutral;
+    padding: 20px;
+
+    
+
+    .results-outter {
+        // border: 1px solid red;
+        padding: 10px;
+
+        & > h1 {
+            font-size: 1.5rem;
+            font-family: $font-heading;
+            text-align: center;
+        }
+
+        .result-list {
+            // border: 1px solid red;
+            padding: 10px;
+            .result {
+                // border: 1px solid red;
+                margin: 10px;
+                font-family: $font-body;
+                font-weight: 400;
+                border-bottom: 1px $blue solid;
+                display: none;
+
+                .result-body {
+                    font-size: 1rem;
+                    margin: 5px;
+                }
+
+                .title {
+                    // text-align: center;
+                    font-family: $font-heading;
+                    font-weight: 600;
+                    margin: 5px;
+                    font-size: 1.5rem;
+                    color: cyan;
+                }
+
+                .company {
+                    &::before {
+                        content: "Company: ";
+                        margin-right: 5px;
+                        color: $cyan;
+                    }
+                }
+
+                .location {
+                    &::before {
+                        content: "Location: ";
+                        margin-right: 5px;
+                        color: $cyan;
+                    }
+                }
+
+                .category {
+                    &::before {
+                        content: "Category: ";
+                        margin-right: 5px;
+                        color: $cyan;
+                    }
+                }
+
+                .type {
+                    &::before {
+                        content: "Type: ";
+                        margin-right: 5px;
+                        color: $cyan;
+                    }
+                }
+
+                .salary {
+                    text-align: center;
+                    font-size: 1.2rem;
+                    margin: 5px;
+                    &::before {
+                        content: "Salary: ";
+                        margin-right: 5px;
+                        color: $cyan;
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: 80%;
+                    border-radius: 30px;
+                    background-color: $cyan;
+                    padding: 10px 10px;
+                    margin: 20px auto;
+                    text-align: center;
+                    color: $dark;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    border: 3px $neutral solid;
+
+                    &:hover {
+                        background-color: $dark-blue-dark;
+                        color: $neutral;
+                        border: 3px $cyan solid;
+                    }
+                }
+            }
+            .show {
+                display: block;
+            }
+        }
+
+        
+
+        @media only screen and (min-width: 1300px) {
+            .result-list{
+                // border: 1px solid red;
+                display: flex;
+                flex-wrap: wrap;
+                border: none;
+                justify-content: space-between;
+            
+
+            .result{
+                // border: 1px solid red;
+                padding: 20px;
+                margin: 20px;
+                width: 30%;
+
+                a{
+                    width: 50%;
+                    padding: 10px 20px;
+                    margin: 20px auto;
+                }
+            }
+        }
+        }
+
+        @media only screen and (min-width: 900px)  and (max-width: 1300px) {
+            .result-list{
+                // border: 1px solid red;
+                display: flex;
+                flex-wrap: wrap;
+                border: none;
+                justify-content: space-between;
+            
+
+            .result{
+                // border: 1px solid red;
+                padding: 20px;
+                margin: 20px;
+                width: 45%;
+
+                a{
+                    width: 50%;
+                    padding: 10px 20px;
+                    margin: 20px auto;
+                }
+            }
+        }
+        }
+    }
+}
