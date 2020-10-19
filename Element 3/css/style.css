@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+/**
+*
+* Testing
+*
+**/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #181f2a;
+  color: white;
+}
+
+.sign-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.sign-flex .logo {
+  margin-bottom: 20px;
+  font-family: "Raleway-Black";
+  padding: 20px;
+}
+
+.sign-flex .logo img {
+  width: 50%;
+}
+
+.sign-flex .logo h1 {
+  font-family: "Raleway-Black";
+}
+
+.sign-flex .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sign-flex .login > h1 {
+  font-family: "Raleway-Black";
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.sign-flex .login > h2 {
+  font-family: "Raleway-Black";
+  margin-bottom: 15px;
+}
+
+.sign-flex .login > .g-signin2 {
+  margin-bottom: 10px;
+}
+
+.sign-flex .login form > input {
+  padding: 10px;
+  background-color: #65e2d9;
+  border: none;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  border: 4px #65e2d9 solid;
+  color: white;
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+}
+
+.sign-flex .login form > input:hover {
+  cursor: pointer;
+  border: 4px #339ecc solid;
+}
+
+.sign-flex .login .login-form {
+  padding: 20px;
+  border: 2px #65e2d9 solid;
+  margin: 20px auto;
+}
+
+.sign-flex .login .login-form .form-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.sign-flex .login .login-form .form-input h2 {
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.sign-flex .login .login-form .form-input input {
+  padding: 15px;
+  border: 2px #65e2d9 solid;
+  border-radius: 5px;
+}
+
+.signup {
+  margin-top: 10px;
+}
+
+.signup h1 {
+  font-family: "Raleway-Black";
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.signup .signup-btn {
+  padding: 10px;
+  background-color: #65e2d9;
+  border: none;
+  margin: 10px auto;
+  text-align: center;
+  width: 80%;
+  border-radius: 5px;
+  border: 4px #65e2d9 solid;
+  color: white;
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+}
+
+.signup .signup-btn:hover {
+  cursor: pointer;
+  border: 4px #339ecc solid;
+}
+
+.contain {
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  bottom: 20%;
+  left: 45%;
+}
+
+.popup {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: #181f2a;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup .signup-forms {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.popup .signup-forms .logo {
+  font-family: "Raleway-Black";
+  padding: 0px;
+}
+
+.popup .signup-forms .logo img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.popup .signup-forms .logo h1 {
+  font-size: 2rem;
+  font-family: "Raleway-Black";
+}
+
+.popup .signup-forms > h1 {
+  margin-top: 20px;
+  font-family: "Raleway-Black";
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.popup .signup-forms .google-signup {
+  text-align: center;
+}
+
+.popup .signup-forms .google-signup h2 {
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.popup .signup-forms .google-signup > div {
+  margin: 20px auto;
+  width: 150px;
+}
+
+.popup .signup-forms .close {
+  padding: 5px;
+  background-color: #65e2d9;
+  border: none;
+  margin: auto;
+  text-align: center;
+  width: 40%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 4px #339ecc solid;
+  color: white;
+  font-family: "OpenSans-Regular";
+  font-size: 1rem;
+}
+
+.popup .signup-forms .close:hover {
+  cursor: pointer;
+  border: 4px #65e2d9 solid;
+}
+
+.popup .signup-forms form > input {
+  padding: 10px;
+  background-color: #65e2d9;
+  border: none;
+  margin: 10px auto;
+  text-align: center;
+  width: 80%;
+  border-radius: 5px;
+  border: 4px #65e2d9 solid;
+  color: white;
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+}
+
+.popup .signup-forms form > input:hover {
+  cursor: pointer;
+  border: 4px #339ecc solid;
+}
+
+.popup .signup-forms .signup-form {
+  padding: 20px;
+  border: 2px #65e2d9 solid;
+  margin: 20px auto;
+}
+
+.popup .signup-forms .signup-form .form-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.popup .signup-forms .signup-form .form-input h2 {
+  font-family: "OpenSans-Regular";
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.popup .signup-forms .signup-form .form-input input {
+  padding: 15px;
+  border: 2px #65e2d9 solid;
+  border-radius: 5px;
+}
