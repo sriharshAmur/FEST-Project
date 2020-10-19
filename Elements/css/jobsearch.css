@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+/**
+*
+* Testing
+*
+**/
+.search-section {
+  background-color: #0b1523;
+  color: white;
+  padding: 20px;
+}
+
+.search-section .search-outter {
+  margin: 0 auto;
+}
+
+.search-section .search-outter h1 {
+  font-family: "Raleway-Black";
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-section .search-outter h2 {
+  font-family: "OpenSans-Regular";
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-section .search-outter .search {
+  padding: 10px;
+  text-align: center;
+}
+
+.search-section .search-outter .search .dropbtn {
+  width: 100%;
+  background-color: #1c2431;
+  color: white;
+  font-size: 1rem;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-section .search-outter .search .dropbtn .dropbtn:hover,
+.search-section .search-outter .search .dropbtn .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.search-section .search-outter .search .search-job {
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.search-section .search-outter .search .search-job input {
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+  border: 2px #65e2d9 solid;
+}
+
+.search-section .search-outter .search .search-job input:focus {
+  outline: 3px solid #ddd;
+}
+
+.search-section .search-outter .search .search-category {
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.search-section .search-outter .search .search-category h2 {
+  padding: 0;
+  margin: 10px;
+}
+
+.search-section .search-outter .search .search-location {
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  color: white;
+}
+
+.search-section .search-outter .search .search-location h2 {
+  padding: 0;
+  margin: 10px;
+}
+
+.search-section .search-outter .search .searchbtn {
+  width: 80%;
+  line-height: 0;
+  border-radius: 30px;
+  background-color: #65e2d9;
+  padding: 30px 50px;
+  margin: 20px auto;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 3px white solid;
+}
+
+.search-section .search-outter .search .searchbtn a {
+  line-height: 0;
+  color: #0b1523;
+  width: 100%;
+  height: 100%;
+}
+
+.search-section .search-outter .search .searchbtn:hover {
+  background-color: #0b1523;
+  color: white;
+  border: 3px #65e2d9 solid;
+}
+
+.search-section .search-outter .search .searchbtn:hover a {
+  color: white;
+}
+
+@media only screen and (min-width: 900px) {
+  .search-section .search-outter .search {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .search-section .search-outter .search .search-job {
+    width: 100%;
+  }
+  .search-section .search-outter .search .search-job input {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 1rem;
+    border: 2px #65e2d9 solid;
+  }
+  .search-section .search-outter .search .search-job input:focus {
+    outline: 3px solid #ddd;
+  }
+  .search-section .search-outter .search .searchbtn {
+    width: 20%;
+    margin: 60px 0;
+  }
+}
+
+.results {
+  background-color: #181f2a;
+  color: white;
+  padding: 20px;
+}
+
+.results .results-outter {
+  padding: 10px;
+}
+
+.results .results-outter > h1 {
+  font-size: 1.5rem;
+  font-family: "Raleway-Black";
+  text-align: center;
+}
+
+.results .results-outter .result-list {
+  padding: 10px;
+}
+
+.results .results-outter .result-list .result {
+  margin: 10px;
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  border-bottom: 1px #339ecc solid;
+  display: none;
+}
+
+.results .results-outter .result-list .result .result-body {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.results .results-outter .result-list .result .title {
+  font-family: "Raleway-Black";
+  font-weight: 600;
+  margin: 5px;
+  font-size: 1.5rem;
+  color: cyan;
+}
+
+.results .results-outter .result-list .result .company::before {
+  content: "Company: ";
+  margin-right: 5px;
+  color: #65e2d9;
+}
+
+.results .results-outter .result-list .result .location::before {
+  content: "Location: ";
+  margin-right: 5px;
+  color: #65e2d9;
+}
+
+.results .results-outter .result-list .result .category::before {
+  content: "Category: ";
+  margin-right: 5px;
+  color: #65e2d9;
+}
+
+.results .results-outter .result-list .result .type::before {
+  content: "Type: ";
+  margin-right: 5px;
+  color: #65e2d9;
+}
+
+.results .results-outter .result-list .result .salary {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+.results .results-outter .result-list .result .salary::before {
+  content: "Salary: ";
+  margin-right: 5px;
+  color: #65e2d9;
+}
+
+.results .results-outter .result-list .result a {
+  display: block;
+  width: 80%;
+  border-radius: 30px;
+  background-color: #65e2d9;
+  padding: 10px 10px;
+  margin: 20px auto;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 3px white solid;
+}
+
+.results .results-outter .result-list .result a:hover {
+  background-color: #0b1523;
+  color: white;
+  border: 3px #65e2d9 solid;
+}
+
+.results .results-outter .result-list .show {
+  display: block;
+}
+
+@media only screen and (min-width: 1300px) {
+  .results .results-outter .result-list {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: space-between;
+  }
+  .results .results-outter .result-list .result {
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+  }
+  .results .results-outter .result-list .result a {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .results .results-outter .result-list {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: space-between;
+  }
+  .results .results-outter .result-list .result {
+    padding: 20px;
+    margin: 20px;
+    width: 45%;
+  }
+  .results .results-outter .result-list .result a {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 20px auto;
+  }
+}

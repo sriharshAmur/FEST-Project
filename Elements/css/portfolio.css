@@ -1,0 +1,496 @@
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+/**
+*
+* Testing
+*
+**/
+.deactive {
+  display: none;
+}
+
+.index {
+  width: 100%;
+  background-color: #181f2a;
+  font-family: "OpenSans-Regular";
+  height: auto;
+  overflow: hidden;
+}
+
+.index .pages .pageul {
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  display: block;
+}
+
+.index .pages .pageul li {
+  list-style: none;
+  margin: 5px auto;
+  width: 100%;
+}
+
+.index .pages .pageul a {
+  display: block;
+  padding: 10px;
+  background-color: #181f2a;
+  border: 2px #65e2d9 solid;
+}
+
+.index .pages .pageul a:hover {
+  background-color: #65e2d9;
+  border: 2px #181f2a solid;
+  color: black;
+}
+
+.index .pages .pageul .page {
+  text-align: center;
+}
+
+.index .pages .pageul .page-item:not(.down-arrow) {
+  display: none;
+}
+
+.index .pages .pageul .down-arrow {
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.index .pages .pageul .edit {
+  text-align: center;
+  cursor: pointer;
+}
+
+.index .pages .pageul .edit a {
+  background-color: #65e2d9;
+  border: 2px #181f2a solid;
+  color: black;
+}
+
+.index .pages .pageul .edit a:hover {
+  background-color: #181f2a;
+  border: 2px #65e2d9 solid;
+  color: white;
+}
+
+.index .pages .active .page-item:not(.down-arrow) {
+  display: block;
+  grid-gap: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .index .pages .pageul {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "arrow arrow " "edit home " "about skill" "slide project " "test contact";
+  }
+  .index .pages .pageul a {
+    display: block;
+  }
+  .index .pages .pageul .down-arrow {
+    grid-area: arrow;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .index .pages .pageul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: "edit home about skill" "slide project test contact";
+  }
+  .index .pages .pageul a {
+    display: block;
+  }
+  .index .pages .pageul .down-arrow {
+    display: none;
+  }
+  .index .pages .pageul .page-item:not(.down-arrow) {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .index .pages .pageul {
+    top: 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .index .pages .pageul li {
+    width: auto;
+  }
+  .index .pages .pageul .down-arrow {
+    display: none;
+  }
+  .index .pages .pageul .page-item:not(.down-arrow) {
+    display: inline;
+  }
+}
+
+.home {
+  width: 100%;
+  background-color: #0b1523;
+  color: white;
+}
+
+.home .home-outter {
+  width: 80%;
+  margin: 0px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.home .home-outter h1 {
+  font-family: "Raleway-Black";
+  font-size: 2rem;
+  margin: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+}
+
+.home .home-outter p {
+  font-family: "OpenSans-Regular";
+  width: 80%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0px 0px 10px 3px #65e2d9;
+}
+
+.home .home-outter a {
+  display: inline-block;
+  margin: 20px 0;
+  background-color: #65e2d9;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px #65e2d9 solid;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "OpenSans-Regular";
+}
+
+.home .home-outter a:hover {
+  background-color: #0b1523;
+  border: 2px #65e2d9 solid;
+  color: white;
+  transform: scale(0.98);
+}
+
+@media only screen and (min-width: 600px) {
+  .home .home-outter h1 {
+    margin-bottom: 40px;
+  }
+  .home .home-outter p {
+    margin-top: 70px;
+  }
+  .home .home-outter a {
+    margin: 40px 0;
+  }
+}
+
+.about {
+  padding: 20px 0;
+  background-color: #181f2a;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.about h1 {
+  margin-top: 20px;
+  font-family: "Raleway-Black";
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.about .about-outter {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "OpenSans-Regular";
+}
+
+.about .about-outter .about-image {
+  margin: 20px auto;
+}
+
+.about .about-outter .about-image img {
+  order: 1;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.about .about-outter .about-content {
+  width: 50%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.about .about-outter .about-content p {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.about .about-outter .about-content .about-links {
+  margin: 20px;
+}
+
+.about .about-outter .about-content .about-links a {
+  background-color: #1c2431;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.about .about-outter .about-content .about-links a:hover {
+  background-color: #181f2a;
+}
+
+.about .about-outter .about-content .about-links img {
+  width: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about .about-outter {
+    width: 100%;
+    padding: 20px;
+  }
+  .about .about-outter .about-image {
+    margin: 20px auto;
+  }
+  .about .about-outter .about-image img {
+    order: 1;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  .about .about-outter .about-content {
+    width: 90%;
+  }
+  .about .about-outter .about-content .about-links img {
+    width: 30px;
+  }
+}
+
+.skills {
+  padding: 20px 0;
+  background-color: #1c2431;
+  color: white;
+  width: 100%;
+}
+
+.skills h1 {
+  font-family: "Raleway-Black";
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.skills .skills-outter {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.skills .skills-outter .skills-tags {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #65e2d9;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.skills .skills-outter .skills-tags .tag {
+  background-color: #339ecc;
+  padding: 20px;
+  text-align: center;
+  font-family: "OpenSans-Regular";
+  font-size: 1rem;
+  align-self: center;
+}
+
+.skills .skills-outter .skills-tags .tag1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.skills .skills-outter .skills-tags .tag2 {
+  grid-column: 4/7;
+  grid-row: 1/2;
+}
+
+.skills .skills-outter .skills-tags .tag3 {
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+
+.skills .skills-outter .skills-tags .tag4 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.skills .skills-outter .skills-tags .tag5 {
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+.skills .skills-outter .skills-tags .tag6 {
+  grid-column: 5/7;
+  grid-row: 3/4;
+}
+
+.skills .skills-outter .skills-percent {
+  padding: 20px;
+}
+
+.skills .skills-outter .skills-percent .skill {
+  margin: 25px 0;
+  font-family: "OpenSans-Regular";
+}
+
+.skills .skills-outter .skills-percent .skill h2 {
+  margin-left: 5px;
+}
+
+.skills .skills-outter .skills-percent .skill h3 {
+  text-align: right;
+}
+
+.skills .skills-outter .skills-percent .skill progress {
+  width: 250px;
+}
+
+.slideshow {
+  padding: 30px;
+  background-color: #181f2a;
+  text-align: center;
+}
+
+.slideshow h1 {
+  font-family: "Raleway-Black";
+  font-size: 2rem;
+  color: white;
+  margin: 30px auto;
+}
+
+.slideshow .gallery {
+  margin: 20px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.slideshow .gallery .gallery-cell {
+  margin: 10px 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .slideshow .gallery {
+    width: 90%;
+  }
+}
+
+.edit-form {
+  display: none;
+  background-color: #181f2a;
+  color: white;
+}
+
+.edit-form .edit-outter {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.edit-form .edit-outter > h1 {
+  font-family: "Raleway-Black";
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edit-form .edit-outter #form-edit {
+  margin: auto;
+  padding: 0 20px;
+}
+
+.edit-form .edit-outter #form-edit .form-data {
+  margin: 20px 0;
+  font-family: "OpenSans-Regular";
+  font-size: 1rem;
+}
+
+.edit-form .edit-outter #form-edit .form-data h1 {
+  margin: 10px 0;
+}
+
+.edit-form .edit-outter #form-edit .form-data input,
+.edit-form .edit-outter #form-edit .form-data textarea {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.edit-form .edit-outter #form-edit button {
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #65e2d9;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px #65e2d9 solid;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "OpenSans-Regular";
+}
+
+.edit-form .edit-outter #form-edit button:hover {
+  background-color: #0b1523;
+  border: 2px #65e2d9 solid;
+  color: white;
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .edit-form .edit-outter {
+    text-align: left;
+    width: 60%;
+    padding: 40px;
+  }
+}
+
+.active-form {
+  display: block;
+}
