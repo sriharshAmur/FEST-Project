@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#"><img src="images/logo.png" alt=""> FEST</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Portfolio</a></li>
+                <li class="item has-submenu">
+                    <a tabindex="0">Explore</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">Features</a></li>
+                        <li class="subitem"><a href="#">Jobs</a></li>
+                        <li class="subitem"><a href="#">Salaries</a></li>
+                        <li class="subitem"><a href="#">Tools</a></li>
+                    </ul>
+                </li>
+                <li class="item button"><a href="#">Log In</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="index ">
+        <div class="pages">
+            <ul class="pageul">
+                <li class="page-item down-arrow"><a href="#"><i class="fas fa-chevron-down"></i></a></li>
+                <li class="page-item edit"><a onclick="showForm()"><i class="fas fa-edit"></i> Edit</a></li>
+                <li class="page-item page page-home"><a href="#home">Home</a></li>
+                <li class="page-item page page-about "><a href="#about">About Me</a></li>
+                <li class="page-item page page-skiil"><a href="#skills">Skills</a></li>
+                <li class="page-item page page-slide"><a href="#slideshow">Slideshow</a></li>
+                <!-- <li class="page-item page page-project"><a href="projects">Projects</a></li> -->
+                <!-- <li class="page-item page page-test"><a href="#testimonial">Testimonials</a></li> -->
+                <li class="page-item page page-contact"><a href="#about">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="home not-form" id="home">
+
+        <div class="home-outter">
+            <h1 id="home-title">Welcome to my Page</h1>
+            <p id="home-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, amet!</p>
+            <a href="#" id="home-link">Hire Me</a>
+        </div>
+
+    </section>
+
+    <section class="about not-form" id="about">
+        <h1>About Me</h1>
+        <div class="about-outter">
+
+            <div class="about-content">
+                <p id="about-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, illo?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus unde neque. Sed sint
+                    officia quis corporis. Doloremque, quidem nostrum?</p>
+                <div class="about-links">
+                    <a href="#" id="about-facebook"><img src="images/facebook.png" alt=""></a>
+                    <a href="#" id="about-instagram"><img src="images/instagram.png" alt=""></a>
+                    <a href="#" id="about-twitter"><img src="images/twitter.png" alt=""></a>
+                    <a href="#" id="about-youtube"><img src="images/youtube.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="about-image">
+                <img class="profile" src="images/profile.jpeg" alt="" id="about-images">
+                <h2 id="about-name">My Name</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills not-form" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-outter">
+
+
+            <div class="skills-tags">
+
+                <div id="skill-tag1 " class="tag tag1">Web Developement</div>
+                <div id="skill-tag2 " class="tag tag2">PHP</div>
+                <div id="skill-tag3 " class="tag tag3">HTML / CSS / Javascript</div>
+                <div id="skill-tag4 " class="tag tag4">JQuery</div>
+                <div id="skill-tag5 " class="tag tag5">CSS Grid</div>
+                <div id="skill-tag6 " class="tag tag6">Flexbox</div>
+
+            </div>
+
+
+
+            <div class="skills-percent">
+
+                <div class="skill" id="skill1">
+                    <h2>HTML</h2>
+                    <div class="pecent">
+                        <progress max="100" value="90" id="progress1"></progress>
+                        <h3>90%</h3>
+                    </div>
+                </div>
+                <div class="skill" id="skill2">
+                    <h2>CSS</h2>
+                    <div class="pecent">
+                        <progress max="100" value="40" id="progress2"></progress>
+                        <h3>40%</h3>
+                    </div>
+                </div>
+                <div class="skill" id="skill3">
+                    <h2>JS</h2>
+                    <div class="pecent">
+                        <progress max="100" value="60" id="progress3"></progress>
+                        <h3>60%</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <div class="project-outter">
+            <div class="project">
+                <img src="#" alt="">
+                <div class="project-content">
+                    <h2 class="project-title">Title of Project</h2>
+                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
+                        debitis.</p>
+                </div>
+
+                <div class="project">
+                    <img src="#" alt="">
+                    <div class="project-content">
+                        <h2 class="project-title">Title of Project</h2>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Voluptate, debitis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section> -->
+
+    <section class="slideshow not-form" id="slideshow">
+        <h1>Slideshow of Projects</h1>
+        <div class="gallery js-flickity" >
+            <!-- data-flickity-options='{"fade":true, "cellAlign": center, "contain": true, "wrapAround": true }' -->
+
+            <div class="gallery-cell">
+                <img id="slide-img1" src="images/seosmall.png" >
+            </div>
+            <div class="gallery-cell">
+                <img id="slide-img2" src="images/coding.png">
+            </div>
+            <div class="gallery-cell">
+                <img id="slide-img3" src="images/code.png" >
+            </div>
+            <div class="gallery-cell">
+                <img id="slide-img4" src="images/programming.png" >
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- <section class="testimonial" id="testimonial">
+
+
+
+    </section> -->
+    <!-- 
+    <section class="contact" id="contact">
+
+
+    </section> -->
+
+
+    <section class="edit-form" id="select-form">
+        <div class="edit-outter">
+            <h1>Edit Your Portfolio</h1>
+            <form id="form-edit">
+                <div class="form-data">
+                    <h1>Homepage Title</h1>
+                    <input type="text" id="home-title-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Homepage Text</h1>
+                    <textarea id="home-text-value" cols="30" rows="10"></textarea>
+                    <!-- <input type="text" id="home-text-value"> -->
+                </div>
+
+                <div class="form-data">
+                    <h1>Homepage Hire Me Link</h1>
+                    <input type="text" id="home-link-value">
+                </div>
+                <!-- About Me Page -->
+
+                <div class="form-data">
+                    <h1>Your Name</h1>
+                    <input type="text" id="about-name-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>About Me Text</h1>
+                    <textarea name="s" id="about-text-value" cols="30" rows="10"></textarea>
+                    <!-- <input type="text" id="about-text-value"> -->
+                </div>
+
+
+                <div class="form-data">
+                    <h1>Facebook Link</h1>
+                    <input type="text" id="about-facebook-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Instagram Link</h1>
+                    <input type="text" id="about-instagram-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Twitter Link</h1>
+                    <input type="text" id="about-twitter-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Youtube Link</h1>
+                    <input type="text" id="about-youtube-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>About Me Profile Picture</h1>
+                    <input type="file" accept="image/*" onchange="loadImage(event)" id="about-images-value">
+                </div>
+
+                <!-- Skills -->
+
+                <div class="form-data">
+                    <h1>Skill 1 Tag</h1>
+                    <input type="text" id="tag1-value" class="tag-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 2 Tag</h1>
+                    <input type="text" id="tag2-value" class="tag-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 3 Tag</h1>
+                    <input type="text" id="tag3-value" class="tag-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 4 Tag</h1>
+                    <input type="text" id="tag4-value" class="tag-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 5 Tag</h1>
+                    <input type="text" id="tag5-value" class="tag-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 6 Tag</h1>
+                    <input type="text" id="tag6-value" class="tag-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 1 Title</h1>
+                    <input type="text" id="skill1-title-value" class="skill-title-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 1 Percentage</h1>
+                    <input type="text" id="skill1-percent-value" class="skill-percent-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 2 Title</h1>
+                    <input type="text" id="skill2-title-value " class="skill-title-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 2 Percentage</h1>
+                    <input type="text" id="skill2-percent-value" class="skill-percent-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 3 Title</h1>
+                    <input type="text" id="skill3-title-value" class="skill-title-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Skill 3 Percentage</h1>
+                    <input type="text" id="skill3-percent-value" class="skill-percent-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Slideshow Image 1</h1>
+                    <input type="file" accept="image/*" onchange="slide1(event)" id="slide-img1-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Slideshow Image 2</h1>
+                    <input type="file" accept="image/*" onchange="slide2(event)" id="slide-img2-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Slideshow Image 3</h1>
+                    <input type="file" accept="image/*" onchange="slide3(event)" id="slide-img3-value">
+                </div>
+
+                <div class="form-data">
+                    <h1>Slideshow Image 4</h1>
+                    <input type="file" accept="image/*" onchange="slide4(event)" id="slide-img4-value">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-links container">
+            <a href="#">FEST</a>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Tems of Use</a></li>
+                <li><a href="#">Privacy Center</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="images/youtube.png" alt=""></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; Copyright 2020 FEST
+        </div>
+    </footer>
+
+
+    
+    <script src="js/flickity.js"> </script>
+    <script src="js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/719072c8bd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
